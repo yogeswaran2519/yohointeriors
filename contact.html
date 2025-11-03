@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>YOHO INTERIORS</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Construction Company Website Template" name="keywords">
+        <meta content="Construction Company Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="assets/img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="assets/css/style.css" rel="stylesheet">
+         
+        <style>
+ .map-section {
+      max-width: 1300px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin-bottom: 25px;
+    }
+
+    .map-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(90deg, #0b84ff20, transparent);
+      padding: 16px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .map-header .icon {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      background: rgba(11,132,255,0.12);
+      border-radius: 8px;
+    }
+
+    .map-header .icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #0b84ff;
+    }
+
+    .map-header h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+      color: #111;
+    }
+
+    .map-container {
+      height: 420px;
+      width: 100%;
+    }
+
+    .map-container iframe {
+      width: 150%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .map-container { height: 320px; }
+      .map-header h2 { font-size: 16px; }
+    }
+        </style>
+        <style>
+/* Popup Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.popup-overlay.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Thank You Card */
+.thank-you-card {
+    background: white;
+    border-radius: 15px;
+    padding: 50px 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    animation: slideUp 0.4s ease;
+    position: relative;
+}
+
+.checkmark-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #4CAF50;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scaleIn 0.5s ease 0.2s backwards;
+}
+
+.checkmark {
+    width: 35px;
+    height: 35px;
+    border: 4px solid white;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+    margin-bottom: 10px;
+}
+
+.thank-you-card h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 15px;
+    animation: fadeInUp 0.5s ease 0.3s backwards;
+}
+
+.thank-you-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    animation: fadeInUp 0.5s ease 0.4s backwards;
+}
+
+.close-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    animation: fadeInUp 0.5s ease 0.5s backwards;
+}
+
+.close-btn:hover {
+    background: #45a049;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
+<style>
+      .navbar-toggler {
+    border: none;
+    padding: 0;
+    background: transparent;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Remove unnecessary focus outline */
+.navbar-toggler:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Restore Bootstrap’s default hamburger icon */
+/* .navbar-toggler-icon {
+    background-image: var(--bs-navbar-toggler-icon-bg);
+} */
+
+/* Large Laptops and Desktops (1200px - 1600px) */
+@media (max-width: 1600px) {
+    .navbar-nav.mx-auto {
+        padding-left: 200px;
+    }
+    
+    .navbar-logo {
+        transform: scale(1.6);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.8);
+    }
+}
+
+/* Standard Laptops (992px - 1199px) */
+@media (max-width: 1199px) {
+    .nav-bar .navbar {
+        padding: 8px 20px !important;
+    }
+    
+    .navbar-nav.mx-auto {
+        padding-left: 100px;
+        gap: 5px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+    
+    .navbar-logo {
+        height: 60px;
+        transform: scale(1.5);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.7);
+    }
+    
+    .navbar-brand {
+        height: 60px;
+    }
+    
+    .nav-bar.nav-sticky {
+        padding: 2px 20px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 50px !important;
+    }
+    
+    .navbar .ml-auto a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .nav-bar .navbar {
+        padding: 8px 15px !important;
+        height: auto;
+    }
+    
+    .navbar-brand {
+        height: 55px;
+    }
+    
+    .navbar-logo {
+        height: 55px;
+        transform: scale(1.3);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.5);
+    }
+    
+    /* Stack navigation vertically */
+    .navbar-nav.mx-auto {
+        padding-left: 0;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 15px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 12px 20px;
+        font-size: 17px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        transform: translateX(5px);
+    }
+    
+    /* Social icons below nav links on mobile menu */
+    .navbar .ml-auto {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+        padding-bottom: 15px;
+        gap: 20px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+    
+    /* Sticky adjustments for tablet */
+    .nav-bar.nav-sticky {
+        padding: 2px 15px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        padding: 6px 15px !important;
+        height: 60px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 45px !important;
+    }
+    
+    /* Navbar collapse background */
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.98);
+        border-radius: 8px;
+        margin-top: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.0);
+    }
+    
+    /* Toggler size for tablet */
+    .navbar-toggler {
+        width: 28px;
+        height: 22px;
+    }
+    
+    .navbar-toggler-icon {
+        width: 28px;
+        height: 22px;
+    }
+}
+
+/* Mobile Landscape (576px - 767px) */
+@media (max-width: 767px) {
+    .nav-bar .navbar {
+        padding: 6px 12px !important;
+    }
+    
+    .navbar-brand {
+        height: 50px;
+    }
+    
+    .navbar-logo {
+        height: 50px;
+        transform: scale(1.2);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.4);
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+    .navbar .ml-auto {
+        gap: 15px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 34px;
+        height: 34px;
+        font-size: 17px;
+    }
+    
+    .nav-bar.nav-sticky {
+        padding: 2px 12px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        padding: 4px 12px !important;
+        height: 55px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 40px !important;
+    }
+}
+
+/* Mobile Portrait (up to 575px) */
+@media (max-width: 575px) {
+    .nav-bar {
+        padding: 0;
+    }
+    
+    .nav-bar .navbar {
+        padding: 5px 10px !important;
+    }
+    
+    .navbar-brand {
+        height: 45px;
+    }
+    
+    .navbar-logo {
+        height: 45px;
+        transform: scale(1.1);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.3);
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    
+    .navbar .ml-auto {
+        gap: 12px;
+        margin-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    .nav-bar.nav-sticky {
+        padding: 2px 10px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        padding: 4px 10px !important;
+        height: 50px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 35px !important;
+        transform: scale(1);
+    }
+    
+    .navbar-toggler {
+        width: 26px;
+        height: 20px;
+       
+    }
+    
+    .navbar-toggler-icon {
+        width: 30px;
+        height: 28px;
+    }
+    
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        height: 2.5px;
+    }
+      .navbar-toggler-icon::before {
+        top: -9px;
+    }
+    
+    .navbar-toggler-icon::after {
+        bottom: -9px;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .navbar-brand {
+        height: 40px;
+    }
+    
+    .navbar-logo {
+        height: 40px;
+        transform: scale(1);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.2);
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 32px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        height: 45px;
+    }
+    
+    .navbar-toggler {
+        width: 24px;
+        height: 18px;
+    }
+    
+    .navbar-toggler-icon {
+        width: 28px;
+        height: 24px;
+    }
+    
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        height: 2px;
+    }
+     .navbar-toggler-icon::before {
+        top: -8px;
+    }
+    
+    .navbar-toggler-icon::after {
+        bottom: -8px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+       <div class="wrapper">
+            
+
+            <!-- Nav Bar Start -->
+<div class="nav-bar">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="navbar-brand" onclick="window.location.href='index.html'" style="cursor:pointer;">
+        <img src="assets/img/YOHO Logo-01.png" alt="Logo" class="navbar-logo">
+      </div>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="interior.html" class="nav-item nav-link">Interior Design</a>
+          <a href="construction.html" class="nav-item nav-link">Construction</a>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+
+       <div class="ml-auto">
+          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="tel:+1234567890" class="phone"><i class="fas fa-phone-alt"></i></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+            <!-- Nav Bar End -->
+            
+            
+            <!-- Page Header Start -->
+             <div class="page-header">
+  <picture>
+    <!-- Mobile banner: only for screens ≤ 768px -->
+    <source srcset="assets/img/contact-mob-ban.jpg" media="(max-width: 768px)">
+    
+    <!-- Desktop banner: for screens > 768px (default) -->
+    <img src="assets/img/contact-banner.jpg" alt="interior Banner">
+  </picture>
+</div>
+            <!-- Page Header End -->
+
+
+            <!-- Contact Start -->
+            <div class="contact wow fadeInUp">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2>NEED HELP? CONTACT US</h2>
+                        <p>We, at YOHO Homes are committed to provide you with any assistance that you require in making a dream home. For any kind
+                        of assistance on Projects, feedback, designs or any other question write to us or call us using the information below.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="flaticon-address"></i>
+                                    <div class="contact-text">
+                                        <h2>Location</h2>
+                                        <p>No 6, Rajiji Road, 1st Lane, Tambaram West,<br> Chennai – 600045</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="flaticon-call"></i>
+                                    <div class="contact-text">
+                                        <h2>Phone</h2>
+                                        <p>+91 98841 82765</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="flaticon-send-mail"></i>
+                                    <div class="contact-text">
+                                        <h2>Email</h2>
+                                        <p>info@example.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="contact-form">
+    <form id="contactForm" action="mail.php" method="POST">
+        <div class="control-group">
+            <input type="text" name="name" class="form-control" placeholder="Your name" required />
+        </div>
+        <div class="control-group">
+            <input type="email" name="email" class="form-control" placeholder="Your email" required />
+        </div>
+        <div class="control-group">
+            <input type="tel" name="mobile" class="form-control" placeholder="Mobile" required />
+        </div>
+        <div class="control-group">
+            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+        </div>
+        <div>
+            <button class="btn" type="submit">Send Message</button>
+        </div>
+    </form>
+</div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact End -->
+<!-- Thank You Popup -->
+<div class="popup-overlay" id="thankYouPopup">
+    <div class="thank-you-card">
+        <div class="checkmark-circle">
+            <div class="checkmark"></div>
+        </div>
+        <h2>Thank You!</h2>
+        <p>Your message has been sent successfully. We appreciate you contacting us and will get back to you soon.</p>
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+
+<div class="map-section">
+    <div class="map-header">
+        <div class="icon">
+            <!-- location icon -->
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2C8.686 2 6 4.686 6 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.314-2.686-6-6-6z" />
+                <circle cx="12" cy="8" r="2.2" />
+            </svg>
+        </div>
+        <h2>GOOGLE LOCATION</h2>
+    </div>
+
+    <div class="map-container">
+        <!-- 🔹 Replace the src below with your Google Maps embed link -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.462055655583!2d80.21138047479513!3d13.069876712716564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526693dde548cb%3A0xde7385705b191730!2sBlue%20Croc%20Advertising!5e0!3m2!1sen!2sin!4v1761126076800!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Office location map">
+        </iframe>
+    </div>
+</div>
+
+
+
+   <!-- Footer Start -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <div class="footer-logo">
+                                    <div class="logo-box">
+                                    <img src="assets/img/logo.png" alt="Company Logo">
+                                  </div>
+                                </div>
+                                <div class="footer-contact">
+                                    <p><i class="fas fa-map-marker-alt" style="color: #fdbe33;"></i> No 6, Rajiji Road, 1st Lane, Tambaram West,<br> Chennai – 600045</p>
+                                    <p><i class="fas fa-phone-alt" style="color: #fdbe33;"></i> +91 98841 82765</p>
+                                    <p><i class="fas fa-envelope" style="color: #fdbe33;"></i> info@example.com</p>
+                                </div>
+
+                                <div class="footer-social">
+                                    <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="" class="instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="tel:+919884182765" class="phone"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2 style="text-align: left;">Links</h2>
+                                <a href="about.html">About Us</a>
+                                <a href="interior.html">Interior Design</a>
+                                <a href="construction.html">Construction Services</a>
+                                <a href="privacy.html">Privacy Policy</a>
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-map">
+                                <h2 style="text-align: left;">Our Location</h2>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.462055655583!2d80.21138047479513!3d13.069876712716564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526693dde548cb%3A0xde7385705b191730!2sBlue%20Croc%20Advertising!5e0!3m2!1sen!2sin!4v1761126076800!5m2!1sen!2sin" 
+                                    width="120%" height="250" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">YOHO INTERIORS</a>, All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed By <a href="https://bluecroc.in">BLUECROC.IN</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+            <a href="https://wa.me/917449049515" target="_blank" class="whatsapp-float" id="whatsappBtn">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        
+        
+       
+        
+
+        <!-- Template Javascript -->
+        <script src="assets/js/main.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+        <script>
+            let map;
+
+            function initMap() {
+                map = L.map('map').setView([20.1809, 78.1676], 4);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors',
+                    maxZoom: 19
+                }).addTo(map);
+
+                map.on('click', function (e) {
+                    console.log('Lat:', e.latlng.lat, 'Lng:', e.latlng.lng);
+                });
+            }
+
+            function zoomIn() {
+                map.zoomIn();
+            }
+
+            function zoomOut() {
+                map.zoomOut();
+            }
+
+            function resetMap() {
+                map.setView([20.1809, 78.1676], 4);
+            }
+
+            window.addEventListener('load', initMap);
+        </script>
+        <script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const submitBtn = this.querySelector('.btn');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    
+    fetch('mail.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+        
+        // Check if the response contains success message
+        if(data.includes('successfully')) {
+            // Show popup
+            document.getElementById('thankYouPopup').classList.add('active');
+            // Reset form
+            document.getElementById('contactForm').reset();
+        } else {
+            alert('Error: ' + data);
+        }
+    })
+    .catch(error => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+        alert('An error occurred. Please try again.');
+        console.error('Error:', error);
+    });
+});
+
+function closePopup() {
+    document.getElementById('thankYouPopup').classList.remove('active');
+}
+
+// Close popup when clicking outside the card
+document.getElementById('thankYouPopup').addEventListener('click', function(e) {
+    if(e.target === this) {
+        closePopup();
+    }
+});
+</script>
+<script>
+  const whatsappBtn = document.getElementById("whatsappBtn");
+
+  function handleWhatsAppVisibility() {
+    if (window.innerWidth > 768) {
+      // Desktop: use scroll effect
+      whatsappBtn.classList.remove("show"); // hide initially
+      window.addEventListener("scroll", scrollHandler);
+    } else {
+      // Mobile: always visible
+      whatsappBtn.classList.add("show");
+      window.removeEventListener("scroll", scrollHandler);
+    }
+  }
+
+  function scrollHandler() {
+    if (window.scrollY > 200) {
+      whatsappBtn.classList.add("show");
+    } else {
+      whatsappBtn.classList.remove("show");
+    }
+  }
+
+  // Initial check
+  handleWhatsAppVisibility();
+
+  // Update on window resize
+  window.addEventListener("resize", handleWhatsAppVisibility);
+</script>
+
+
+
+
+    </body>
+</html>

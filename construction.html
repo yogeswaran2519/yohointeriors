@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>YOHO INTERIORS</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Construction Company Website Template" name="keywords">
+        <meta content="Construction Company Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="assets/img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+       
+
+        <!-- Template Stylesheet -->
+        <link href="assets/css/style.css" rel="stylesheet">
+         
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-u2vU9EYIocE0xVxVJ8oUwPz1JZ7f5W8ghI84y5tM0m5VLU7T3z6zK9x5n7tI8K6W6MCXFAgKXcI4cr4HcWJ9xg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<style>
+    .icon-box {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+    margin-top: -80px;
+    position: relative;
+    background-image: url('assets/img/const-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /* Overlay for better text readability */
+  .icon-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(27, 27, 27, 0.253);
+    z-index: 1;
+  }
+
+  .icon-box > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .icon-box h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #fdbe33;
+    font-weight: 700;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    perspective: 1000px;
+  }
+
+  .icon-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+  }
+
+  .icon-card:hover {
+    transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .icon-card i {
+    font-size: 45px;
+    color: #fdbe33;
+    transition: color 0.3s ease, transform 0.4s ease;
+  }
+
+  .icon-card:hover i {
+    color: #333;
+    transform: translateZ(20px) rotateY(10deg);
+  }
+
+  .icon-card h3 {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #333;
+    transition: transform 0.4s ease;
+  }
+
+  .icon-card:hover h3 {
+    transform: translateZ(10px);
+  }
+
+  @media (max-width: 1000px) {
+    .icon-container {
+      flex-wrap: wrap;
+    }
+    .icon-card{
+        width: 350px;
+    }
+  }
+</style>
+ <style>
+.services {
+    padding: 60px 0;
+    margin-top: -150px;
+    margin-bottom: 20px;
+}
+
+.containers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-headers h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.texts-center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+/* Equal height cards */
+.equal-height {
+    display: flex;
+    align-items: stretch;
+}
+
+.cols-lg-6,
+.cols-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.services-items {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-items:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.services-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.services-img img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.services-texts {
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-texts h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.services-texts p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+    margin: 0;
+    flex: 1;
+    text-align: justify;
+}
+
+/* ====== Large Tablets and Small Laptops (≤ 992px) ====== */
+@media (max-width: 992px) {
+  .services {
+    padding: 50px 0;
+    margin-top: -100px; /* reduce overlap on smaller screens */
+  }
+
+  .section-headers h2 {
+    font-size: 30px;
+  }
+
+  .cols-lg-6,
+  .cols-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .services-img img {
+    height: 300px;
+  }
+
+  .services-texts {
+    padding: 25px;
+  }
+
+  .services-texts h3 {
+    font-size: 18px;
+  }
+
+  .services-texts p {
+    font-size: 15px;
+  }
+}
+
+/* ====== Tablets and Medium Devices (≤ 768px) ====== */
+@media (max-width: 768px) {
+  .services {
+    padding: 40px 0;
+    margin-top: -70px;
+  }
+
+  .section-headers h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .services-texts {
+    padding: 20px;
+  }
+
+  .services-texts h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .services-texts p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .services-img img {
+    height: 280px;
+  }
+}
+
+/* ====== Mobile Devices (≤ 480px) ====== */
+@media (max-width: 480px) {
+  .services {
+    padding: 30px 0;
+    margin-top: -50px;
+    margin-bottom: 40px;
+  }
+
+  .section-headers h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center; /* or center if preferred */
+  }
+
+  .services-items {
+    flex-direction: column;
+    border-radius: 8px;
+  }
+
+  .services-img img {
+    height: 220px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .services-texts {
+    padding: 15px;
+  }
+
+  .services-texts h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .services-texts p {
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+}
+
+
+</style>
+ <style>
+        .tabs-containers {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 36PX;
+            margin-bottom: 30px;
+            font-weight: 700px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .tab {
+            padding: 15px 40px;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            color: #666;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab:hover {
+            border-color: #ff8c00;
+            color: #ff8c00;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 140, 0, 0.2);
+        }
+
+        .tab.active {
+            color: #ff8c00;
+            border-color: #ff8c00;
+            font-weight: bold;
+        }
+
+        .gallery-content {
+            display: none;
+        }
+
+        .gallery-content.active {
+            display: block;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 1;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.7);
+        }
+
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255, 140, 0, 0.6), rgba(255, 165, 0, 0.6));
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 1;
+        }
+
+        .gallery-item:hover::before {
+            opacity: 1;
+        }
+
+     /* ====== Tablets and Medium Devices (≤ 768px) ====== */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+  }
+
+  .tab {
+    padding: 10px 25px;
+    font-size: 1em;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .gallery-item {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs-containers {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .tab {
+    flex: 1 1 48%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    border-radius: 8px;
+  }
+
+  /* Gallery grid — only show 4 images */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .gallery-item {
+    border-radius: 8px;
+    transform: none !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  /* ✅ Only show first 4 images on mobile */
+  .gallery-item:nth-child(n+5) {
+    display: none;
+  }
+
+  /* 🚫 Disable hover effects on mobile */
+  .gallery-item:hover,
+  .gallery-item:hover img,
+  .gallery-item:hover::before {
+    transform: none !important;
+    filter: none !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+  }
+}
+
+ 
+
+</style>   
+<style>
+    .about-content { 
+        display: flex; 
+        flex-direction: column; 
+        height: 100%; 
+    } 
+    .section-header { 
+        text-align: left; 
+        margin-bottom: 20px; 
+    } 
+    .section-header h2 { 
+        font-size: 36px; 
+        font-weight: 700; 
+        color: #333; 
+        margin-bottom: 10px; 
+        text-align: left;
+        margin-top: -68px; 
+    }
+     .section-header h3 { 
+        font-size: 20px; 
+        font-weight: 500; 
+        color: #666; 
+        margin-bottom: 0; 
+        text-align: left; 
+    } 
+    .about-text { 
+        flex: 1; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; 
+    } 
+    .about-text p { 
+        font-size: 16px; 
+        line-height: 1.8; 
+        color: #555; 
+        margin-bottom: 15px; 
+        text-align: justify; 
+    } .btn-know-more { 
+        display: inline-block; 
+        padding: 12px 35px; 
+        background-color: #fdbe33; 
+        color: #030f27; 
+        text-decoration: none; 
+        font-size: 16px; 
+        font-weight: 600; 
+        border-radius: 5px; 
+        transition: all 0.3s ease; 
+        align-self: flex-start; 
+        margin-top: 20px; /* Changed from 14px to auto */ 
+    } 
+    .btn-know-more:hover {
+         background-color: #0056b3; 
+         transform: translateY(-2px); 
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        } /* Equal height alignment */ 
+         .row.align-items-center { 
+            min-height: 100%; 
+        } /* Make both columns equal height */
+         .row.align-items-stretch > [class*='col-'] { 
+            display: flex; 
+            flex-direction: column; 
+        } 
+        .about-img { 
+            display: flex; 
+            flex-direction: column; 
+            height: 80%; 
+        } 
+            .about-img img {
+                width: 100%; 
+                height: 80%; /* Changed from 80px to 100% */ 
+                object-fit: cover; /* Ensures image covers the area properly */ 
+                border-radius: 8px; 
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+            }
+ /* ===== Tablet Devices (≤ 992px) ===== */
+@media (max-width: 992px) {
+  .section-header h2 {
+    font-size: 30px;
+    
+  }
+
+  .section-header h3 {
+    font-size: 18px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .btn-know-more {
+    padding: 10px 28px;
+    font-size: 15px;
+  }
+
+  .about-img {
+    height: auto;
+  }
+
+  .about-img img {
+    height: auto;
+  }
+}
+
+/* ===== Mobile Devices (≤ 768px) ===== */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+   
+  }
+
+  .section-header {
+    text-align: left;
+  }
+ .section-header h2{
+  margin-top: 10px;
+ }
+  .section-header h2,
+  .section-header h3 {
+    text-align: left  ;
+  }
+
+  .about-text {
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-text p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  .btn-know-more {
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  
+
+  .about-img img {
+    border-radius: 6px;
+    height: auto;
+  }
+}
+
+/* ===== Extra Small Devices (≤ 480px) ===== */
+@media (max-width: 480px) {
+  .section-header h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 60px !important;
+    
+    
+  }
+
+  .section-header h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+   .about-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify !important; /* makes text evenly aligned on both sides */
+    text-align-last: left !important; /* ensures the last line aligns to the left */
+   
+  }
+
+  .btn-know-more {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+
+  .about-img img {
+    border-radius: 5px;
+  }
+  .about-img{
+    margin-top: -24spx;
+  }
+}
+
+</style>
+
+<style>
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    background: transparent;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Remove unnecessary focus outline */
+.navbar-toggler:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Restore Bootstrap’s default hamburger icon */
+/* .navbar-toggler-icon {
+    background-image: var(--bs-navbar-toggler-icon-bg);
+} */
+
+/* Large Laptops and Desktops (1200px - 1600px) */
+@media (max-width: 1600px) {
+    .navbar-nav.mx-auto {
+        padding-left: 200px;
+    }
+    
+    .navbar-logo {
+        transform: scale(1.6);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.8);
+    }
+}
+
+/* Standard Laptops (992px - 1199px) */
+@media (max-width: 1199px) {
+    .nav-bar .navbar {
+        padding: 8px 20px !important;
+    }
+    
+    .navbar-nav.mx-auto {
+        padding-left: 100px;
+        gap: 5px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+    
+    .navbar-logo {
+        height: 60px;
+        transform: scale(1.5);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.7);
+    }
+    
+    .navbar-brand {
+        height: 60px;
+    }
+    
+    .nav-bar.nav-sticky {
+        padding: 2px 20px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 50px !important;
+    }
+    
+    .navbar .ml-auto a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .nav-bar .navbar {
+        padding: 8px 15px !important;
+        height: auto;
+    }
+    
+    .navbar-brand {
+        height: 55px;
+    }
+    
+    .navbar-logo {
+        height: 55px;
+        transform: scale(1.3);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.5);
+    }
+    
+    /* Stack navigation vertically */
+    .navbar-nav.mx-auto {
+        padding-left: 0;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 15px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 12px 20px;
+        font-size: 17px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        transform: translateX(5px);
+    }
+    
+    /* Social icons below nav links on mobile menu */
+    .navbar .ml-auto {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+        padding-bottom: 15px;
+        gap: 20px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+    
+    /* Sticky adjustments for tablet */
+    .nav-bar.nav-sticky {
+        padding: 2px 15px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        padding: 6px 15px !important;
+        height: 60px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 45px !important;
+    }
+    
+    /* Navbar collapse background */
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.98);
+        border-radius: 8px;
+        margin-top: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.0);
+    }
+    
+    /* Toggler size for tablet */
+    .navbar-toggler {
+        width: 28px;
+        height: 22px;
+    }
+    
+    .navbar-toggler-icon {
+        width: 28px;
+        height: 22px;
+    }
+}
+
+/* Mobile Landscape (576px - 767px) */
+@media (max-width: 767px) {
+    .nav-bar .navbar {
+        padding: 6px 12px !important;
+    }
+    
+    .navbar-brand {
+        height: 50px;
+    }
+    
+    .navbar-logo {
+        height: 50px;
+        transform: scale(1.2);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.4);
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+    .navbar .ml-auto {
+        gap: 15px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 34px;
+        height: 34px;
+        font-size: 17px;
+    }
+    
+    .nav-bar.nav-sticky {
+        padding: 2px 12px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        padding: 4px 12px !important;
+        height: 55px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 40px !important;
+    }
+}
+
+/* Mobile Portrait (up to 575px) */
+@media (max-width: 575px) {
+    .nav-bar {
+        padding: 0;
+    }
+    
+    .nav-bar .navbar {
+        padding: 5px 10px !important;
+    }
+    
+    .navbar-brand {
+        height: 45px;
+    }
+    
+    .navbar-logo {
+        height: 45px;
+        transform: scale(1.1);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.3);
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    
+    .navbar .ml-auto {
+        gap: 12px;
+        margin-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    .nav-bar.nav-sticky {
+        padding: 2px 10px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        padding: 4px 10px !important;
+        height: 50px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 35px !important;
+        transform: scale(1);
+    }
+    
+    .navbar-toggler {
+        width: 26px;
+        height: 20px;
+       
+    }
+    
+    .navbar-toggler-icon {
+        width: 30px;
+        height: 28px;
+    }
+    
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        height: 2.5px;
+    }
+      .navbar-toggler-icon::before {
+        top: -9px;
+    }
+    
+    .navbar-toggler-icon::after {
+        bottom: -9px;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .navbar-brand {
+        height: 40px;
+    }
+    
+    .navbar-logo {
+        height: 40px;
+        transform: scale(1);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.2);
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 32px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        height: 45px;
+    }
+    
+    .navbar-toggler {
+        width: 24px;
+        height: 18px;
+    }
+    
+    .navbar-toggler-icon {
+        width: 28px;
+        height: 24px;
+    }
+    
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        height: 2px;
+    }
+     .navbar-toggler-icon::before {
+        top: -8px;
+    }
+    
+    .navbar-toggler-icon::after {
+        bottom: -8px;
+    }
+}
+</style>
+  
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+           
+
+            <!-- Nav Bar Start -->
+<div class="nav-bar">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="navbar-brand" onclick="window.location.href='index.html'" style="cursor:pointer;">
+        <img src="assets/img/YOHO Logo-01.png" alt="Logo" class="navbar-logo">
+      </div>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="interior.html" class="nav-item nav-link">Interior Design</a>
+          <a href="construction.html" class="nav-item nav-link">Construction</a>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+
+        <div class="ml-auto">
+          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="tel:+1234567890" class="phone"><i class="fas fa-phone-alt"></i></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+            <!-- Nav Bar End -->
+            
+            
+            <!-- Page Header Start -->
+            <div class="page-header">
+  <picture>
+    <!-- Mobile banner: only for screens ≤ 768px -->
+    <source srcset="assets/img/const-mob-ban.jpg" media="(max-width: 768px)">
+    
+    <!-- Desktop banner: for screens > 768px (default) -->
+    <img src="assets/img/construction-banner.jpg" alt="interior Banner">
+  </picture>
+</div>
+            <!-- Page Header End -->
+
+
+<div class="about wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="about-img">
+                <img src="assets/img/interior-about.jpg" alt="Image" style="height: 400px;">
+            </div>
+        </div>
+        
+        <div class="col-lg-7 col-md-6">
+            <div class="about-content">
+                <div class="section-header text-left">
+                    <h2 >YOHO GROUP</h2>
+                    <h3>WE DESIGN, WE BUILD <br> WE DELIVER YOUR DREAMS</h3>
+                </div>
+                <div class="about-text">
+                    <p>
+                        We bring your vision to life through exceptional design and flawless execution. Our team blends creativity with precision, ensuring every detail reflects your taste and lifestyle. We use only premium materials and follow the highest standards to deliver homes built to last. From elegant residences to state-of-the-art commercial spaces, our designs embody quality and sophistication. Each project is handled with meticulous care, professionalism, and a passion for excellence.With YoHo Group, you don't just build spaces — you create lasting impressions.
+                    </p>
+                    
+                    <a href="#" class="btn-know-more">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ <!-- Service Start -->
+ <div class="services">
+    <div class="containers">
+        <div class="section-headers texts-center">
+            <h2>SERVICES OFFERED</h2>
+        </div>
+
+        <div class="row justify-content-center equal-height">
+           
+            <div class="cols-lg-6 cols-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="services-items">
+                    <div class="services-img">
+                        <img src="assets/img/const-residential.png" alt="Interior Design" />
+                    </div>
+                    <div class="services-texts">
+                        <h3>RESIDENTIAL DESIGN & DEVELOPMENT</h3>
+                        <p>At YoHo Group, we design and develop homes that blend elegance, comfort and functionality. Every residence is crafted with premium materials and thoughtful details to reflect your unique lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="cols-lg-6 cols-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="services-items">
+                    <div class="services-img">
+                        <img src="assets/img/const-commercial.png" alt="Construction Solutions" />
+                    </div>
+                    <div class="services-texts">
+                        <h3>COMMERCIAL/OFFICE SPACE DESIGN & <br>DEVELOPMENT</h3>
+                        <p>Our commercial and office designs combine smart planning with modern aesthetics to inspire productivity and success. We create spaces that elevate your brand and deliver lasting value.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+ <!--Service End-->
+
+ <!---ICONS-->
+  <section class="icon-box">
+  <h2>WHAT MAKES US UNIQUE</h2>
+  <div class="icon-container">
+    <div class="icon-card">
+      <i class="fa-solid fa-pen-ruler"></i>
+      <h3>BESPOKE DESIGN PHILOSOPHY</h3>
+    </div>
+    <div class="icon-card">
+      <i class="fa-solid fa-clock"></i>
+      <h3>ASSURED TIMELY EXECUTION</h3>
+    </div>
+    <div class="icon-card">
+      <i class="fa-solid fa-hammer"></i>
+      <h3>TOP QUALITY CRAFTSMANSHIP</h3>
+    </div>
+    <div class="icon-card">
+      <i class="fa-solid fa-headset"></i>
+      <h3>POST DELIVERY SUPPORT</h3>
+    </div>
+    <div class="icon-card">
+      <i class="fa-solid fa-users"></i>
+      <h3>CUSTOMER CENTRIC APPROACH</h3>
+    </div>
+  </div>
+</section> 
+
+<!--END ICONS-->
+ <!--Gallery-->
+
+    
+ <div class="tabs-containers">
+        <h2>DESIGN INSPIRATION</h2>
+        <div class="tabs">
+            <div class="tab active" onclick="switchTab('residential')">RESIDENTIAL SPACES</div>
+            <div class="tab" onclick="switchTab('commercial')">COMMERCIAL SPACES</div>
+        </div>
+
+        <div id="residential" class="gallery-content active">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/img/residential/res-1.png" alt="Residential 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/residential/res-2.png" alt="Residential 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/residential/res-3.png" alt="Residential 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/residential/res-4.png" alt="Residential 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/residential/res-5.png" alt="Residential 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/residential/res-6.png" alt="Residential 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/residential/res-7.png" alt="Residential 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/residential/res-8.png" alt="Residential 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/residential/res-9.png" alt="Residential 9">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/residential/res-10.png" alt="Residential 10">
+                </div>
+            </div>
+        </div>
+
+        <div id="commercial" class="gallery-content">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-1.png" alt="Commercial 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-2.png" alt="Commercial 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-3.png" alt="Commercial 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-4.png" alt="Commercial 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-5.png" alt="Commercial 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-6.png" alt="Commercial 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-7.png" alt="Commercial 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-8.png" alt="Commercial 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-9.png" alt="Commercial 9">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-10.png" alt="Commercial 10">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-11.png" alt="Commercial 11">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-12.png" alt="Commercial 12">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-13.png" alt="Commercial 13">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/commercial/com-14.png" alt="Commercial 14">
+                </div>
+            </div>
+        </div>
+    </div> 
+ <!---end gallery-->
+           
+
+
+            
+            <!-- Footer Start -->
+      <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <div class="footer-logo">
+                                  <div class="logo-box">
+                                    <img src="assets/img/logo.png" alt="Company Logo">
+                                  </div>
+                                </div>
+                                <div class="footer-contact">
+                                    <p><i class="fas fa-map-marker-alt" style="color: #fdbe33;"></i> No 6, Rajiji Road, 1st Lane, Tambaram West,<br> Chennai – 600045</p>
+                                    <p><i class="fas fa-phone-alt" style="color: #fdbe33;"></i> +91 98841 82765</p>
+                                    <p><i class="fas fa-envelope" style="color: #fdbe33;"></i> info@example.com</p>
+                                </div>
+
+                                <div class="footer-social">
+                                    <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="" class="instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="tel:+919884182765" class="phone"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2 style="text-align: left;">Links</h2>
+                                <a href="about.html">About Us</a>
+                                <a href="interior.html">Interior Design</a>
+                                <a href="construction.html">Construction Services</a>
+                                <a href="privacy.html">Privacy Policy</a>
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-map">
+                                <h2 style="text-align: left;">Our Location</h2>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.462055655583!2d80.21138047479513!3d13.069876712716564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526693dde548cb%3A0xde7385705b191730!2sBlue%20Croc%20Advertising!5e0!3m2!1sen!2sin!4v1761126076800!5m2!1sen!2sin" 
+                                    width="120%" height="250" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">YOHO INTERIORS</a>, All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed By <a href="https://bluecroc.in">BLUECROC.IN</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+             <a href="https://wa.me/917449049515" target="_blank" class="whatsapp-float" id="whatsappBtn">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="assets/js/main.js"></script>
+
+         <script>
+        function switchTab(tabName) {
+            // Hide all gallery content
+            const contents = document.querySelectorAll('.gallery-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected gallery content
+            document.getElementById(tabName).classList.add('active');
+
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+    </script>
+    <script>
+  const whatsappBtn = document.getElementById("whatsappBtn");
+
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > 200) {      // Show after scrolling 200px
+      whatsappBtn.classList.add("show");
+    } else {
+      whatsappBtn.classList.remove("show");
+    }
+  });
+</script>
+
+    </body>
+</html>

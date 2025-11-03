@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>YOHO INTERIORS</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Construction Company Website Template" name="keywords">
+        <meta content="Construction Company Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="assets/img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="assets/css/style.css" rel="stylesheet">
+         
+        <style>
+            /* General Section Styles */
+          .philosophy-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: poppins, sans-serif;
+}
+
+.philosophy-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: stretch; /* Stretch all cards to same height */
+}
+
+/* Individual Card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;      /* Increased width */
+    height: 500px;     /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+.card img {
+    width: 110%;
+    height: 250px;  /* Increased image height */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    flex-grow: 1; /* Makes paragraph take remaining space, keeping cards equal height */
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .card-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        height: auto; /* Allow height to adjust on small screens */
+    }
+}
+
+        </style>
+       <style>
+    .why-yoho {
+        text-align: center;
+        padding: 60px 20px;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        opacity: 0;
+        transition: opacity 0.8s ease;
+        z-index: 0;
+    }
+
+    .background-overlay::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(5, 5, 5, 0.397);
+        z-index: 1;
+    }
+
+    .why-yoho.visible .background-overlay {
+        opacity: 1;
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 2;
+    }
+
+    .why-yoho h2 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        color: #f5f2f2;
+    }
+
+    .icon-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .icon-box {
+        background: #fdbd33b0;
+        border-radius: 12px;
+        padding: 30px 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    .icon-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .icon-box i {
+        font-size: 48px;
+        color: #fff;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .icon-box:hover i {
+        transform: rotate(20deg) scale(1.2);
+    }
+
+    .icon-box p {
+        font-size: 16px;
+        font-weight: 600;
+        color: #555;
+        margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+        .icon-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 576px) {
+        .icon-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+        <style>
+    .gallerys-section {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .gallerys-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .gallerys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .gallerys img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .gallerys img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  @media (max-width: 1024px) {
+    .gallerys {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .gallerys {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .gallerys {
+      grid-template-columns: 1fr;
+    }
+    .gallerys img:nth-child(n+5){
+        display: none;
+    }
+  }
+
+        </style>
+
+
+<style>
+ /* Service Item Horizontal Layout */
+/* Service Item Horizontal Layout */
+.service-item-horizontal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    gap: 30px;
+}
+
+.service-item-horizontal.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Service Images */
+.service-img-left,
+.service-img-right {
+    flex: 0 0 45%;
+    max-width: 45%;
+    max-height: 500px;
+
+}
+
+.service-img-left img,
+.service-img-right img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Service Content */
+.service-content {
+    flex: 1;
+    padding: 20px 40px;
+}
+
+
+.service-content h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.service-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* Service Buttons */
+.service-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.service-buttons .btn-primary,
+.service-buttons .btn-secondary {
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.service-buttons .btn-primary {
+    background-color: #fdbe33;
+    color: #fff;
+}
+
+.service-buttons .btn-primary:hover {
+    background-color: #e5aa2a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(253, 190, 51, 0.3);
+}
+
+.service-buttons .btn-secondary {
+    background-color: #333;
+    color: #fff;
+}
+
+.service-buttons .btn-secondary:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Container styling with proper spacing */
+.service .container {
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.service .row {
+    margin: 0;
+}
+
+.service .row .col-12 {
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-item-horizontal,
+    .service-item-horizontal.reverse {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .service-img-left,
+    .service-img-right {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .service-content {
+        padding: 20px;
+    }
+    
+    .service-buttons {
+        flex-direction: column;
+    }
+    
+    .service-buttons .btn-primary,
+    .service-buttons .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .service .container {
+        padding: 0 20px;
+    }
+}
+</style>
+<style>
+    .sections-header {
+    position: relative;
+    width: 100%;
+    min-height: 200px; /* adjust height as needed */
+    background: url('assets/img/const-bg2.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    overflow: hidden;
+    margin-top: -30px;
+}
+
+.sections-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* dark overlay, adjust opacity */
+    z-index: 1;
+}
+
+.sections-header h2,
+.sections-header p {
+    position: relative;
+    z-index: 2; /* makes text appear above overlay */
+    max-width: 800px;
+}
+.sections-header p{
+    margin-bottom: 8px;
+}
+/* ---------- Laptop (max-width: 1200px) ---------- */
+@media (max-width: 1200px) {
+  .sections-header {
+    min-height: 180px;
+    padding: 50px 20px;
+    background-position: center;
+  }
+
+  .sections-header h2 {
+    font-size: 32px;
+  }
+
+  .sections-header p {
+    font-size: 16px;
+  }
+}
+
+/* ---------- Tablet (max-width: 992px) ---------- */
+@media (max-width: 992px) {
+  .sections-header {
+    min-height: 220px;
+    padding: 50px 15px;
+    background-position: center;
+    text-align: center;
+  }
+
+  .sections-header h2 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .sections-header p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+/* ---------- Mobile (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+  .sections-header {
+    min-height: 250px;
+    padding: 40px 10px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .sections-header h2 {
+    font-size: 24px;
+  }
+
+  .sections-header p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* ---------- Small Mobile (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+  .sections-header {
+    min-height: 300px;
+    padding: 30px 10px;
+    background-position: center;
+    background-size: cover; /* same image, scales nicely */
+    margin-top: -110px;
+    margin-bottom: 15px;
+  }
+
+  .sections-header h2 {
+    font-size: 20px;
+  }
+
+  .sections-header p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
+
+</style>
+
+<style>
+    .about {
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.about .row {
+    display: flex;
+    align-items: stretch; /* make both columns equal height */
+    flex-wrap: wrap;
+}
+
+.about .about-imgs {
+    position: relative;
+    width: 100%;
+    height: 465px;
+}
+
+.about .about-imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.about .section-header {
+    margin-bottom: 20px;
+}
+
+.about .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* keeps spacing consistent */
+    height: 100%;
+}
+
+.about .about-text p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about .about-text a.btn {
+    align-self: flex-start;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #030f27;
+    background: #fdbe33;
+    border-radius: 10px;
+    transition: .3s;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.about .about-text a.btn:hover {
+    color: #fdbe33;
+    background: #030f27;
+}
+/* ---------- Laptop (max-width: 1200px) ---------- */
+@media (max-width: 1200px) {
+  .about .about-imgs {
+    height: 400px;
+  }
+
+  .about .about-text p {
+    font-size: 15px;
+  }
+
+  .about .about-text a.btn {
+    font-size: 15px;
+    padding: 8px 25px;
+  }
+}
+
+/* ---------- Tablet (max-width: 992px) ---------- */
+@media (max-width: 992px) {
+  .about {
+    padding: 50px 0;
+  }
+
+  .about .row {
+    flex-direction: column; /* stack image and text */
+  }
+
+  .about .about-imgs {
+    height: 350px;
+    margin-bottom: 25px;
+  }
+
+  .about .about-text {
+    height: auto;
+    text-align: center;
+  }
+
+  .about .about-text p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .about .about-text a.btn {
+    align-self: center;
+  }
+}
+
+/* ---------- Mobile (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 0;
+  }
+
+  .about .about-imgs {
+    height: 300px;
+  }
+
+  .about .about-text p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .about .about-text a.btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+}
+
+/* ---------- Small Mobile (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+  .about {
+    padding: 30px 10px;
+    margin-bottom: 30px;
+  }
+  .about .section-header h2{
+    text-align: center;
+    margin-top: -36px;
+  }
+  .about .about-imgs {
+    height: 250px;
+  }
+
+  .about .about-text p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .about .about-text a.btn {
+    font-size: 13px;
+    padding: 7px 18px;
+  }
+}
+
+</style>
+<style>
+      .navbar-toggler {
+    border: none;
+    padding: 0;
+    background: transparent;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Remove unnecessary focus outline */
+.navbar-toggler:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Restore Bootstrap’s default hamburger icon */
+/* .navbar-toggler-icon {
+    background-image: var(--bs-navbar-toggler-icon-bg);
+} */
+
+/* Large Laptops and Desktops (1200px - 1600px) */
+@media (max-width: 1600px) {
+    .navbar-nav.mx-auto {
+        padding-left: 200px;
+    }
+    
+    .navbar-logo {
+        transform: scale(1.6);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.8);
+    }
+}
+
+/* Standard Laptops (992px - 1199px) */
+@media (max-width: 1199px) {
+    .nav-bar .navbar {
+        padding: 8px 20px !important;
+    }
+    
+    .navbar-nav.mx-auto {
+        padding-left: 100px;
+        gap: 5px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+    
+    .navbar-logo {
+        height: 60px;
+        transform: scale(1.5);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.7);
+    }
+    
+    .navbar-brand {
+        height: 60px;
+    }
+    
+    .nav-bar.nav-sticky {
+        padding: 2px 20px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 50px !important;
+    }
+    
+    .navbar .ml-auto a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .nav-bar .navbar {
+        padding: 8px 15px !important;
+        height: auto;
+    }
+    
+    .navbar-brand {
+        height: 55px;
+    }
+    
+    .navbar-logo {
+        height: 55px;
+        transform: scale(1.3);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.5);
+    }
+    
+    /* Stack navigation vertically */
+    .navbar-nav.mx-auto {
+        padding-left: 0;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 15px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 12px 20px;
+        font-size: 17px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        transform: translateX(5px);
+    }
+    
+    /* Social icons below nav links on mobile menu */
+    .navbar .ml-auto {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+        padding-bottom: 15px;
+        gap: 20px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+    
+    /* Sticky adjustments for tablet */
+    .nav-bar.nav-sticky {
+        padding: 2px 15px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        padding: 6px 15px !important;
+        height: 60px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 45px !important;
+    }
+    
+    /* Navbar collapse background */
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.98);
+        border-radius: 8px;
+        margin-top: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.0);
+    }
+    
+    /* Toggler size for tablet */
+    .navbar-toggler {
+        width: 28px;
+        height: 22px;
+    }
+    
+    .navbar-toggler-icon {
+        width: 28px;
+        height: 22px;
+    }
+}
+
+/* Mobile Landscape (576px - 767px) */
+@media (max-width: 767px) {
+    .nav-bar .navbar {
+        padding: 6px 12px !important;
+    }
+    
+    .navbar-brand {
+        height: 50px;
+    }
+    
+    .navbar-logo {
+        height: 50px;
+        transform: scale(1.2);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.4);
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+    .navbar .ml-auto {
+        gap: 15px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 34px;
+        height: 34px;
+        font-size: 17px;
+    }
+    
+    .nav-bar.nav-sticky {
+        padding: 2px 12px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        padding: 4px 12px !important;
+        height: 55px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 40px !important;
+    }
+}
+
+/* Mobile Portrait (up to 575px) */
+@media (max-width: 575px) {
+    .nav-bar {
+        padding: 0;
+    }
+    
+    .nav-bar .navbar {
+        padding: 5px 10px !important;
+    }
+    
+    .navbar-brand {
+        height: 45px;
+    }
+    
+    .navbar-logo {
+        height: 45px;
+        transform: scale(1.1);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.3);
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    
+    .navbar .ml-auto {
+        gap: 12px;
+        margin-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    .nav-bar.nav-sticky {
+        padding: 2px 10px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        padding: 4px 10px !important;
+        height: 50px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 35px !important;
+        transform: scale(1);
+    }
+    
+    .navbar-toggler {
+        width: 26px;
+        height: 20px;
+       
+    }
+    
+    .navbar-toggler-icon {
+        width: 30px;
+        height: 28px;
+    }
+    
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        height: 2.5px;
+    }
+      .navbar-toggler-icon::before {
+        top: -9px;
+    }
+    
+    .navbar-toggler-icon::after {
+        bottom: -9px;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .navbar-brand {
+        height: 40px;
+    }
+    
+    .navbar-logo {
+        height: 40px;
+        transform: scale(1);
+    }
+    
+    .navbar-logo:hover {
+        transform: scale(1.2);
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    
+    .navbar .ml-auto a {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    
+    .nav-bar.nav-sticky .navbar-logo {
+        height: 32px !important;
+    }
+    
+    .nav-bar.nav-sticky .navbar {
+        height: 45px;
+    }
+    
+    .navbar-toggler {
+        width: 24px;
+        height: 18px;
+    }
+    
+    .navbar-toggler-icon {
+        width: 28px;
+        height: 24px;
+    }
+    
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        height: 2px;
+    }
+     .navbar-toggler-icon::before {
+        top: -8px;
+    }
+    
+    .navbar-toggler-icon::after {
+        bottom: -8px;
+    }
+}
+</style>
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+           
+            <!-- Nav Bar Start -->
+<div class="nav-bar">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="navbar-brand" onclick="window.location.href='index.html'" style="cursor:pointer;">
+        <img src="assets/img/YOHO Logo-01.png" alt="Logo" class="navbar-logo">
+      </div>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="interior.html" class="nav-item nav-link">Interior Design</a>
+          <a href="construction.html" class="nav-item nav-link">Construction</a>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+
+        <div class="ml-auto">
+          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="tel:+1234567890" class="phone"><i class="fas fa-phone-alt"></i></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+            <!-- Nav Bar End -->
+            
+            
+            <!-- Page Header Start -->
+            <div class="page-header">
+  <picture>
+    <!-- Mobile banner: only for screens ≤ 768px -->
+    <source srcset="assets/img/Interior-03.jpg" media="(max-width: 768px)">
+    
+    <!-- Desktop banner: for screens > 768px (default) -->
+    <img src="assets/img/Interior-01.jpg" alt="interior Banner">
+  </picture>
+</div>
+            <!-- Page Header End -->
+<div class="about wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="about-imgs">
+                    <img src="assets/img/interior-about.jpg" alt="Image">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+                <div class="section-header text-left">
+                    <h2>ALL INTERIOR DESIGN SOLUTIONS <br> UNDER ONE ROOF</h2>
+                   
+                </div>
+                <div class="about-text">
+                    <p>
+                        At YOHO Homes, we bring international finesse, design innovation, and professional excellence to every project we
+                        undertake. Our keen eye for detail and distinct design sensibility ensure that each space we create carries a sense of
+                        exclusivity and surprise.
+                    </p>
+                    <p>
+                    Whether it’s a complete residential transformation, a commercial interior project or the redesign of a select space
+                    within your home, we offer fully customized solutions tailored to your needs. From luxurious, high-end finishes to
+                    minimalist, contemporary designs, every project reflects our commitment to quality, precision, and personalisation.
+                    Simply share your vision and timeline — and we’ll turn it into reality with elegance and expertise.
+                    </p>
+                    <a class="btn" href="" >Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Service Start -->
+
+<div class="sections-header">
+    <div class="overlay"></div>
+    <h2 style="color: #fdbe33; font-weight: 700;">SERVICES OFFERED</h2>
+    <p style="color: rgb(255, 255, 255); font-size: 20px; width: 80%;">
+        We offer end-to-end interior design solutions for both residential and commercial spaces, blending creativity,
+        functionality, and style to suit every need. From concept and planning to execution and finishing, we transform every
+        space into a reflection of your vision and purpose.
+    </p>
+</div>
+<div class="service" >
+    <div class="container">
+       <div class="row justify-content-center" style="margin-top: -20px;">
+            <!-- Card 1 - Image Left -->
+            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item-horizontal">
+                    <div class="service-img-left">
+                        <img src="assets/img/interior-serv1.png" alt="Interior Design" />
+                    </div>
+                    <div class="service-content">
+                        <h3>RESIDENTIAL INTERIOR DESIGN</h3>
+                        <p>Transforming a house into a home requires thoughtful interior design that reflects personality, comfort, and functionality. Every element — from color schemes to furniture placement — plays a vital role in creating a harmonious living environment. Residential interior design focuses on optimizing space, enhancing aesthetics, and ensuring practicality for everyday life. It blends creativity with lifestyle needs, ensuring each room serves a purpose while maintaining visual appeal. Using the right materials, textures.
+</p>
+                        <div class="service-buttons">
+                            <a class="btn-primary" href="#residential">View Gallery</a>
+                            <a class="btn-secondary" href="#">Talk to uss</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 - Image Right -->
+            <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item-horizontal reverse">
+                    <div class="service-img-right" >
+                        <img src="assets/img/interior-serv2.png" alt="Construction Solutions" />
+                    </div>
+                    <div class="service-content">
+                        <h3>COMMERCIAL/OFFICE INTERIOR DESIGN</h3>
+                        <p>Designing a commercial or office space goes beyond aesthetics — it’s about creating an environment that enhances productivity, collaboration, and brand identity. A well-planned layout ensures efficient workflow, comfort, and functionality for employees and clients alike. Commercial interior design focuses on maximizing space utilization while maintaining a professional and appealing atmosphere. The right combination of lighting, furniture, and color schemes can influence mood, creativity, and overall work performance. 
+</p>
+                        <div class="service-buttons">
+                            <a class="btn-primary" href="#commercial">View Gallery</a>
+                            <a class="btn-secondary" href="#">Talk to us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!--Service End-->
+
+        <!--Philosophy START-->
+<div class="philosophy-section" style="margin-top: -50px;">
+    <h2>YOHO DESIGN PHILOSOPHY</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>CREATIVITY</h3>
+            <img src="assets/img/interior design1.jpg" alt="Innovation">
+            <p>We infuse every project with originality and imagination, transforming ideas into spaces that inspire and delight. Our
+            designs blend art, emotion, and functionality to create timeless interiors..</p>
+        </div>
+        <div class="card">
+            <h3>SPACE UTILISATION</h3>
+            <img src="assets/img/interior-space.png" alt="Integrity">
+            <p>Every inch matters. We plan and design intelligently to maximize space, ensuring beauty and purpose coexist in perfect
+            harmony.</p>
+        </div>
+        <div class="card">
+            <h3>BALANCE</h3>
+            <img src="assets/img/interior design3.jpg" alt="Collaboration">
+            <p>Our designs strike the perfect balance between aesthetics and comfort — where form meets function, and elegance meets
+            ease.</p>
+        </div>
+        <div class="card">
+            <h3>SUSTAINABILITY</h3>
+            <img src="assets/img/interior-sustainability.jpg" alt="Excellence">
+            <p>We design responsibly, using eco-friendly materials and mindful practices to create spaces that are as kind to the
+            planet as they are to people.</p>
+        </div>
+    </div>
+</div>
+
+
+        <!--Philosophy End-->
+
+
+        <!--Icons Start-->
+            <section class="why-yoho" >
+    <div class="background-overlay"></div>
+    <div class="content-wrapper">
+        <h2>WHY YOHO</h2>
+        <div class="icon-grid" style="margin-top: -20px;">
+            <div class="icon-box">
+                <i class="fas fa-star"></i>
+                <p>Highest Quality</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-lightbulb"></i>
+                <p>Creative Designs</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-clock"></i>
+                <p>On Time Execution</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-eye"></i>
+                <p>Transparency</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-wallet"></i>
+                <p>Cost Effective</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-layer-group"></i>
+                <p>Space Utilisation</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-pencil-ruler"></i>
+                <p>Bespoke Designs</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-th-large"></i>
+                <p>Large Design Variety</p>
+            </div>
+        </div>
+        <a href="#"
+            style="display: block; width:200px; text-align: center; margin: 0 auto; margin-top:15px; padding: 10px 20px; background-color: #fdbe33; color: #fff; text-decoration: none; border-radius: 5px; font-weight: 600;">Talk
+            to us</a>
+    </div>
+</section>
+        <!--Icons End-->
+
+
+        <!--Gallery Strat-->
+<div id="residential" class="gallerys-section" >
+    <h2>RESIDENTIAL REFERENCE GALLERY</h2>
+    <div class="gallerys">
+        <img src="assets/img/residential/1.png" alt="Gallery Image 1">
+        <img src="assets/img/residential/2.png" alt="Gallery Image 2">
+        <img src="assets/img/residential/3.png" alt="Gallery Image 3">
+        <img src="assets/img/residential/4.png" alt="Gallery Image 4">
+        <img src="assets/img/residential/5.png" alt="Gallery Image 5">
+        <img src="assets/img/residential/6.png" alt="Gallery Image 6">
+        <img src="assets/img/residential/7.png" alt="Gallery Image 7">
+        <img src="assets/img/residential/8.png" alt="Gallery Image 8">
+        <img src="assets/img/residential/9.png" alt="Gallery Image 9">
+        <img src="assets/img/residential/10.png" alt="Gallery Image 10">
+        <img src="assets/img/residential/11.png" alt="Gallery Image 11">
+        <img src="assets/img/residential/12.png" alt="Gallery Image 12">
+        <img src="assets/img/residential/13.png" alt="Gallery Image 13">
+        <img src="assets/img/residential/14.png" alt="Gallery Image 14">
+        <img src="assets/img/residential/15.png" alt="Gallery Image 15">
+        <img src="assets/img/residential/16.png" alt="Gallery Image 16">
+        <img src="assets/img/residential/17.png" alt="Gallery Image 17">
+    </div>
+</div>
+
+
+<div id="commercial" class="gallerys-section">
+    <h2 style="margin-top: 25px;">COMMERCIAL / OFFICE REFERENCE GALLERY</h2>
+    <div class="gallerys">
+        <img src="assets/img/commercial/19.png" alt="Gallery Image 1">
+        <img src="assets/img/commercial/20.png" alt="Gallery Image 2">
+        <img src="assets/img/commercial/21.png" alt="Gallery Image 3">
+        <img src="assets/img/commercial/22.png" alt="Gallery Image 4">
+        <img src="assets/img/commercial/23.png" alt="Gallery Image 5">
+        <img src="assets/img/commercial/24.png" alt="Gallery Image 6">
+        <img src="assets/img/commercial/25.png" alt="Gallery Image 7">
+        <img src="assets/img/commercial/26.png" alt="Gallery Image 8">
+        <img src="assets/img/commercial/27.png" alt="Gallery Image 9">
+        <img src="assets/img/commercial/28.png" alt="Gallery Image 10">
+        <img src="assets/img/commercial/29.png" alt="Gallery Image 11">
+        <img src="assets/img/commercial/30.png" alt="Gallery Image 12">
+        
+    </div>
+</div>
+
+<!--Gallery End-->
+            <!-- Service Start -->
+            <!-- <div class="service">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Our Services</p>
+                        <h2>We Provide Services</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/service-1.jpg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Building Construction</h3>
+                                    <a class="btn" href="img/service-1.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/service-2.jpg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>House Renovation</h3>
+                                    <a class="btn" href="img/service-2.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/service-3.jpg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Architecture Design</h3>
+                                    <a class="btn" href="img/service-3.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/service-4.jpg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Interior Design</h3>
+                                    <a class="btn" href="img/service-4.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/service-5.jpg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Fixing & Support</h3>
+                                    <a class="btn" href="img/service-5.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="img/service-6.jpg" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Painting</h3>
+                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Service End -->
+            
+            
+            <!-- FAQs Start -->
+            <!-- <div class="faqs">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Frequently Asked Question</p>
+                        <h2>You May Ask</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="accordion-1">
+                                <div class="card wow fadeInLeft" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
+                                            Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+                                            Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
+                                            Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.4s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
+                                            Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.5s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
+                                            Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="accordion-2">
+                                <div class="card wow fadeInRight" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
+                                            Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
+                                            Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
+                                            Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.4s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
+                                            Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseNine" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.5s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
+                                            Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTen" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- FAQs End -->
+
+
+            <!-- Footer Start -->
+         <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <div class="footer-logo">
+                                    <div class="logo-box">
+                                    <img src="assets/img/logo.png" alt="Company Logo">
+                                  </div>
+                                </div>
+                                <div class="footer-contact">
+                                    <p><i class="fas fa-map-marker-alt" style="color: #fdbe33;"></i> No 6, Rajiji Road, 1st Lane, Tambaram West,<br> Chennai – 600045</p>
+                                    <p><i class="fas fa-phone-alt" style="color: #fdbe33;"></i> +91 98841 82765</p>
+                                    <p><i class="fas fa-envelope" style="color: #fdbe33;"></i> info@example.com</p>
+                                </div>
+
+                                <div class="footer-social">
+                                    <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="" class="instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="tel:+919884182765" class="phone"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Links</h2>
+                                <a href="about.html">About Us</a>
+                                <a href="interior.html">Interior Design</a>
+                                <a href="construction.html">Construction Services</a>
+                                <a href="privacy.html">Privacy Policy</a>
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-map">
+                                <h2>Our Location</h2>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.462055655583!2d80.21138047479513!3d13.069876712716564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526693dde548cb%3A0xde7385705b191730!2sBlue%20Croc%20Advertising!5e0!3m2!1sen!2sin!4v1761126076800!5m2!1sen!2sin" 
+                                    width="120%" height="250" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">YOHO INTERIORS</a>, All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed By <a href="https://bluecroc.in">BLUECROC.IN</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+            <a href="https://wa.me/917449049515" target="_blank" class="whatsapp-float" id="whatsappBtn">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="assets/js/main.js"></script>
+        <script>
+  const whatsappBtn = document.getElementById("whatsappBtn");
+
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > 200) {      // Show after scrolling 200px
+      whatsappBtn.classList.add("show");
+    } else {
+      whatsappBtn.classList.remove("show");
+    }
+  });
+</script>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        
+        if (targetId && targetId !== '#') {
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                const offsetTop = targetSection.offsetTop - 80; // Adjust offset as needed (80px for fixed header)
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+});
+</script>
+
+<script>
+    // Scroll animation for background reveal
+    const observerOptions = {
+        threshold: 0.2,
+        rootMargin: '0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    const whyYohoSection = document.querySelector('.why-yoho');
+    if (whyYohoSection) {
+        observer.observe(whyYohoSection);
+    }
+</script>
+
+    </body>
+</html>
